@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Link from "next/link";
-// import Menu from "./Menu";
 import Menu from "./Menu";
 
 const HeaderBox = styled.nav`
@@ -25,11 +24,8 @@ const Logo = styled.a`
 export default function Header() {
   return (
     <HeaderBox>
-      {/* <Menu /> */}
       <Link href="/">
         <Menu />
-
-        {/* Swapping elements */}
       </Link>
     </HeaderBox>
   );

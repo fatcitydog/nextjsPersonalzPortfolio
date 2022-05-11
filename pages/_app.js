@@ -1,13 +1,13 @@
 import GlobalStyle from "../globalStyles";
-import Layout from "../components/layout";
-import Header from "../components/Header";
+import Layout from "../components/Layout/Layout";
+import Head from "next/head";
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
-      <Header />
+    <Layout>
+      <Head>Yik</Head>
       <GlobalStyle />
       <Component {...pageProps} />
-    </div>
+    </Layout>
   );
 }
 

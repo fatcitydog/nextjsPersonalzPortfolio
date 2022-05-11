@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion, useCycle } from "framer-motion";
-import { MenuIcon, LargeCloseIcon } from "./styles/Icon";
-import { HeaderMenuLink } from "./styles/StyledLink";
+import { MenuIcon, LargeCloseIcon } from "../styles/Icon";
+import { HeaderMenuLink } from "../styles/StyledLink";
 
 const Navbar = styled(motion.nav)`
   margin: 20px 0;
@@ -63,12 +63,7 @@ export default function Menu() {
             width: 320,
           }}
         >
-          <RouterList
-            className="container"
-            initial="closed"
-            animate="open"
-            variants={sideVariants}
-          >
+          <RouterList initial="closed" animate="open" variants={sideVariants}>
             {links.map(({ href, children }, idx) => (
               <HeaderMenuLink key={idx} href={href} children={children} />
             ))}
