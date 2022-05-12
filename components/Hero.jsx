@@ -11,7 +11,6 @@ const IconImage = styled.img`
 `;
 
 const Headline = styled.h1`
-  color: black;
   font-size: 2rem;
 `;
 
@@ -31,8 +30,8 @@ export default function Hero() {
         <IconImage src="/aSampleIamge.jpg" />
       </Box>
       <Card>
+        <Headline>Hi, I'm Yik,</Headline>
         <Headline>
-          Hi, I'm Yik,
           <TypeIt
             options={{
               speed: 30,
@@ -44,9 +43,7 @@ export default function Hero() {
                 .pause(550)
                 .delete(6)
                 .pause(300)
-                .type(
-                  "Front End Agile Web Developer focusing on React, Next.js and Node.js..."
-                );
+                .type("Full Stack Developer...");
 
               // Remember to return it!
               return instance;

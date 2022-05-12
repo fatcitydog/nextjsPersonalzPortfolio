@@ -4,17 +4,12 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import TypeIt from "typeit-react";
 const squareVariants = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
-  hidden: { opacity: 0, scale: 0.5 },
-};
-
-const sideVariants = {
-  open: {
-    transition: {
-      staggerChildren: 0.1,
-      staggerDirection: 1,
-    },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { type: "spring", bounce: 0.4, duration: 0.8 },
   },
+  hidden: { opacity: 0.5, scale: 0.5 },
 };
 
 const AnimationCard = styled(motion.div)`
@@ -86,7 +81,12 @@ export default function TechComponent({ title, data }) {
             <ImageCard>
               {data.map((image) => (
                 <PlaceHolder>
-                  <TechImage key={image.id} src={image.src} alt={image.name} />
+                  <TechImage
+                    whileTap={{ scale: 0.9 }}
+                    key={image.id}
+                    src={image.src}
+                    alt={image.name}
+                  />
                 </PlaceHolder>
               ))}
             </ImageCard>

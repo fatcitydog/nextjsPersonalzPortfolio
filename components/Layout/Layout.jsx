@@ -4,12 +4,12 @@ import styled, { ThemeProvider } from "styled-components";
 import { useState } from "react";
 import { motion } from "framer-motion";
 const theme = {
-  primary: "F8F9FA",
-  dark: "black",
+  primary: "#F8F9FA",
+  dark: "#212529",
 };
 
 const Box = styled.div`
-  height: 200rem;
+  height: 100rem;
 `;
 // const ThemeBox = styled.div`
 //   width: 160px;

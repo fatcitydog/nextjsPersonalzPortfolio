@@ -5,9 +5,7 @@ import Hero from "../components/Hero";
 import TechComponent from "../components/TechComponent";
 
 const Title = styled.h1`
-  color: black;
-
-  font-size: 3rem;
+  font-size: 2rem;
 `;
 export default function HomePage() {
   return (

@@ -21,12 +21,12 @@ export const FrontEndData = [
   },
   {
     id: 5,
-    name: "Axios",
+    name: "React-Router",
     src: "https://miro.medium.com/max/1200/1*TKvlTeNqtkp1s-eVB5Hrvg@2x.png",
   },
   {
     id: 6,
-    name: "Styled Components ",
+    name: "Styled Components",
     src: "https://cdn-media-1.freecodecamp.org/images/1*p1TndLk3UsGPBsM7qHPZIw.png",
   },
   {
@@ -128,5 +128,210 @@ export const BasicTech = [
     id: 7,
     name: "YARN",
     src: "data:image/png;base64,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",
+  },
+];
+
+export const projectData = [
+  {
+    id: 1,
+    image: ["/budget1.png", "/budget2.png", "/budget3.png"],
+    title: "MoreBudget",
+    details:
+      " This budgeting app and its simple four-rule method can help users organize their finances, demolish their debt, save piles of cash, and reach their financial goals faster. ",
+    date: "Starting in May 2022",
+    status: "Processing",
+    deploy: false,
+    link: "",
+    tech: [
+      {
+        id: 2,
+        name: "Next.js",
+      },
+      {
+        id: 3,
+        name: "TypeScript",
+      },
+      {
+        id: 4,
+        name: "Styled Components",
+      },
+      {
+        id: 5,
+        name: "Material UI",
+      },
+      {
+        id: 6,
+        name: "Motion Framer",
+      },
+      {
+        id: 7,
+        name: "MongoDB",
+      },
+    ],
+  },
+  {
+    id: 2,
+    image: ["/budget1.png", "/budget2.png", "/budget3.png"],
+    title: "Village",
+    details:
+      " This budgeting app and its simple four-rule method can help users organize their finances, demolish their debt, save piles of cash, and reach their financial goals faster. ",
+    date: "March - April 2022",
+    status: "Processing",
+    deploy: false,
+    link: "",
+    tech: [
+      {
+        id: 1,
+        name: "React",
+      },
+      {
+        id: 2,
+        name: "Javascript",
+      },
+      {
+        id: 12,
+        name: "Sass",
+      },
+      {
+        id: 3,
+        name: "Material UI",
+      },
+      {
+        id: 4,
+        name: "Axios",
+      },
+      {
+        id: 5,
+        name: "React-Router",
+      },
+      {
+        id: 6,
+        name: "Mysql",
+      },
+      {
+        id: 7,
+        name: "Knex.js",
+      },
+      {
+        id: 8,
+        name: "Node.js",
+      },
+      {
+        id: 9,
+        name: "Express.js",
+      },
+      {
+        id: 10,
+        name: "Passport.js",
+      },
+      {
+        id: 11,
+        name: "Firebase",
+      },
+    ],
+  },
+  {
+    id: 3,
+    image: ["/budget1.png", "/budget2.png", "/budget3.png"],
+    title: "Instock",
+    details:
+      " This budgeting app and its simple four-rule method can help users organize their finances, demolish their debt, save piles of cash, and reach their financial goals faster. ",
+    date: "March 2022",
+    status: "Finished",
+    deploy: true,
+    link: "",
+    tech: [
+      {
+        id: 1,
+        name: "React",
+      },
+      {
+        id: 3,
+        name: "Sass",
+      },
+      {
+        id: 4,
+        name: "Node.js",
+      },
+      {
+        id: 5,
+        name: "Express.js",
+      },
+    ],
+  },
+  {
+    id: 4,
+    image: ["/brainflix.png"],
+    title: "BrainFlix",
+    details:
+      " This budgeting app and its simple four-rule method can help users organize their finances, demolish their debt, save piles of cash, and reach their financial goals faster. ",
+    date: "March 2022",
+    status: "Finished",
+    deploy: true,
+    link: "https://brainflix-yik.herokuapp.com/videos/c05b9a93-8682-4ab6-aff2-92ebb4bbfc14",
+    tech: [
+      {
+        id: 1,
+        name: "React",
+      },
+      {
+        id: 3,
+        name: "Sass",
+      },
+      {
+        id: 4,
+        name: "Node.js",
+      },
+      {
+        id: 5,
+        name: "Express.js",
+      },
+    ],
+  },
+  {
+    id: 5,
+    image: ["/bandSite.png"],
+    title: "Band Site",
+    details:
+      "My first JavaScript Project working with API. A responsive website with comments section and fetching data from API",
+    date: "Feb 2022",
+    status: "Finished",
+    deploy: true,
+    link: "https://band-site-six.vercel.app/",
+    tech: [
+      {
+        id: 1,
+        name: "HTML",
+      },
+      {
+        id: 2,
+        name: "Sass",
+      },
+      {
+        id: 3,
+        name: "JavaScript",
+      },
+    ],
+  },
+  {
+    id: 6,
+    image: ["/travelsite.png"],
+    title: "Travel Site",
+    details:
+      " My first Project. A basic travel destination website, leveraging HTML, CSS, and component thinking.",
+    date: "Jan 2022",
+    status: "Finished",
+    deploy: true,
+    link: "https://travelsite-rho.vercel.app/index.html",
+    tech: [
+      {
+        id: 1,
+        name: "HTML",
+      },
+      {
+        id: 2,
+        name: "Sass",
+      },
+    ],
   },
 ];
