@@ -12,7 +12,7 @@ const IconImage = styled.img`
 
 const Headline = styled.h1`
   color: black;
-  font-size: 2.5rem;
+  font-size: 2rem;
 `;
 
 const Card = styled.div`
@@ -21,15 +21,38 @@ const Card = styled.div`
 `;
 
 export default function Hero() {
+  // const SuperStrong = ({ children }) => {
+  //   return <strong style={{ fontSize: "3rem" }}>{children}</strong>;
+  // };
+
   return (
     <Container>
       <Box>
         <IconImage src="/aSampleIamge.jpg" />
       </Box>
       <Card>
-        <TypeIt>
-          <Headline>I am Yik, a fullstack developer</Headline>
-        </TypeIt>
+        <Headline>
+          Hi, I'm Yik,
+          <TypeIt
+            options={{
+              speed: 30,
+              cursor: false,
+            }}
+            getBeforeInit={(instance) => {
+              instance
+                .type("A Writer")
+                .pause(550)
+                .delete(6)
+                .pause(300)
+                .type(
+                  "Front End Agile Web Developer focusing on React, Next.js and Node.js..."
+                );
+
+              // Remember to return it!
+              return instance;
+            }}
+          />
+        </Headline>
       </Card>
     </Container>
   );

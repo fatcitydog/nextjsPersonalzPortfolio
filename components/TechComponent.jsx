@@ -18,7 +18,6 @@ const sideVariants = {
 };
 
 const AnimationCard = styled(motion.div)`
-  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,17 +36,17 @@ const ImageCard = styled.div`
   justify-content: flex-start;
 `;
 const TechImage = styled(motion.img)`
-  max-width: 10rem;
+  max-width: 6.5rem;
 
-  max-height: 10rem;
-  transform: scale(0.45);
+  max-height: 6.5rem;
+
   border-radius: 25px;
 `;
 
 const PlaceHolder = styled.div`
   margin: 1rem 1rem;
-  width: 3rem;
-  height: 3rem;
+  width: 6.5rem;
+  height: 6.5rem;
   border-radius: 25px;
   display: flex;
   justify-content: center;
@@ -64,8 +63,6 @@ export default function TechComponent({ title, data }) {
   useEffect(() => {
     if (inView) {
       controls.start("visible");
-    } else {
-      controls.start("hidden");
     }
   }, [controls, inView]);
   return (
@@ -78,7 +75,12 @@ export default function TechComponent({ title, data }) {
       >
         {inView && (
           <>
-            <TypeIt>
+            <TypeIt
+              options={{
+                speed: 30,
+                cursor: false,
+              }}
+            >
               <SubTitle>{title}</SubTitle>
             </TypeIt>
             <ImageCard>

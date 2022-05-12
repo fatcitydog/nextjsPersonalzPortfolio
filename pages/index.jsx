@@ -6,6 +6,7 @@ import TechComponent from "../components/TechComponent";
 
 const Title = styled.h1`
   color: black;
+
   font-size: 3rem;
 `;
 export default function HomePage() {
