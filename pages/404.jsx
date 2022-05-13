@@ -2,7 +2,7 @@ import Link from "next/link";
 import Head from "next/head";
 import styled from "styled-components";
 import { useEffect } from "react";
-import { useRouter } from "next/router";
+import useRouter from "next/router";
 
 const NotFound = styled.section`
   text-align: center;

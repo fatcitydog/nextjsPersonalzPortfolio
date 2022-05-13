@@ -30,7 +30,7 @@ export default function Hero() {
         <IconImage src="https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Fselfphoto.jpg?alt=media&token=1c07573a-1406-4dc8-8f19-5a32844d1b52" />
       </Box>
       <Card>
-        <Headline>Hi, I'm Yik,</Headline>
+        <Headline>Hi, I am Yik,</Headline>
         <Headline>
           <TypeIt
             options={{
