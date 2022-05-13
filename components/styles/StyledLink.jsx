@@ -12,8 +12,8 @@ const StyledLink = styled.a`
 `;
 
 const MenuLink = styled(motion.a)`
-  margin: 0.5rem 0 0 1rem;
-  padding: 0.5rem 0 1rem 0.5rem;
+  margin: 1rem;
+  padding: 1rem;
   &:active {
     color: black;
     background-color: white;

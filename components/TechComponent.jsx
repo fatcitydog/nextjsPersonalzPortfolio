@@ -3,26 +3,36 @@ import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 import TypeIt from "typeit-react";
-const squareVariants = {
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: { type: "spring", bounce: 0.4, duration: 0.8 },
-  },
-  hidden: { opacity: 0.5, scale: 0.5 },
-};
+import { squareVariants } from "../globalStyles";
+
+const TechCard = styled.section`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem 0;
+  height: 100vh;
+  @media screen and (min-width: 768px) {
+    height: 50vh;
+  }
+`;
 
 const AnimationCard = styled(motion.div)`
   display: flex;
   flex-direction: column;
   justify-content: center;
 `;
-
-const TechCard = styled.section`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin: 2rem 0;
+const Box = styled.div`
+  height: 3rem;
+  margin-bottom: 1rem 0;
+  @media screen and (min-width: 768px) {
+    margin: 2rem 0;
+  }
+`;
+const SubTitle = styled.div`
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 600;
 `;
 const ImageCard = styled.div`
   display: flex;
@@ -32,10 +42,11 @@ const ImageCard = styled.div`
 `;
 const TechImage = styled(motion.img)`
   max-width: 6.5rem;
-
   max-height: 6.5rem;
-
-  border-radius: 25px;
+  border-radius: 5px;
+  &:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
 `;
 
 const PlaceHolder = styled.div`
@@ -47,17 +58,15 @@ const PlaceHolder = styled.div`
   justify-content: center;
   align-items: center;
 `;
-const SubTitle = styled.div`
-  color: black;
-  font-size: 1.2rem;
-  font-weight: 500;
-`;
+
 export default function TechComponent({ title, data }) {
   const controls = useAnimation();
   const [ref, inView] = useInView();
   useEffect(() => {
     if (inView) {
       controls.start("visible");
+    } else {
+      controls.start("hidden");
     }
   }, [controls, inView]);
   return (
@@ -69,7 +78,7 @@ export default function TechComponent({ title, data }) {
         variants={squareVariants}
       >
         {inView && (
-          <>
+          <Box>
             <TypeIt
               options={{
                 speed: 30,
@@ -78,19 +87,21 @@ export default function TechComponent({ title, data }) {
             >
               <SubTitle>{title}</SubTitle>
             </TypeIt>
-            <ImageCard>
-              {data.map((image) => (
-                <PlaceHolder key={image.id}>
-                  <TechImage
-                    whileTap={{ scale: 0.9 }}
-                    key={image.id}
-                    src={image.src}
-                    alt={image.name}
-                  />
-                </PlaceHolder>
-              ))}
-            </ImageCard>
-          </>
+          </Box>
+        )}
+        {inView && (
+          <ImageCard>
+            {data.map((image) => (
+              <PlaceHolder key={image.id}>
+                <TechImage
+                  whileTap={{ scale: 0.9 }}
+                  key={image.id}
+                  src={image.src}
+                  alt={image.name}
+                />
+              </PlaceHolder>
+            ))}
+          </ImageCard>
         )}
       </AnimationCard>
     </TechCard>

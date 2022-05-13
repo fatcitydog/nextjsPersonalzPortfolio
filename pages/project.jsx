@@ -1,4 +1,4 @@
-import { Container, Title } from "../globalStyles";
+import { Container, Title, Wrapper } from "../globalStyles";
 
 import styled from "styled-components";
 
@@ -8,8 +8,10 @@ import ProjectComponent from "../components/ProjectComponent";
 export default function ProjectPage() {
   return (
     <Container>
-      <Title>Project</Title>
-      <ProjectComponent />
+      <Wrapper>
+        <Title>Project</Title>
+        <ProjectComponent />
+      </Wrapper>
     </Container>
   );
 }

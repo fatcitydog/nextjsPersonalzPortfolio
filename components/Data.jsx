@@ -157,7 +157,7 @@ export const projectData = [
       },
       {
         id: 4,
-        name: "Styled Components",
+        name: "Styled Comp",
       },
       {
         id: 5,
@@ -206,10 +206,6 @@ export const projectData = [
       {
         id: 4,
         name: "Axios",
-      },
-      {
-        id: 5,
-        name: "React-Router",
       },
       {
         id: 6,
