@@ -16,7 +16,7 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 8rem;
+  height: 11rem;
   justify-content: center;
   align-items: center;
   padding: 0 0.5rem;
@@ -29,21 +29,28 @@ const Card = styled.div`
   }
 `;
 
-const Headline = styled.h1`
+const HeadlineYik = styled.div`
   font-size: 1.5rem;
   margin: 1.5rem 0;
-  text-align: start;
+  font-weight: 600;
   width: 100%;
-
-  @media screen and (min-width: 768px) {
-    width: 17rem;
-  }
-`;
-const HeadlineTwo = styled(Headline)`
   text-align: center;
   @media screen and (min-width: 768px) {
     width: 10rem;
+
     margin-right: 2rem;
+  }
+`;
+const Headline = styled.div`
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+  text-align: start;
+  width: 100%;
+  height: 4rem;
+  font-weight: 600;
+  @media screen and (min-width: 768px) {
+    width: 70%;
+    height: 1.2rem;
   }
 `;
 
@@ -92,7 +99,7 @@ export default function Hero() {
   return (
     <HeroCard>
       <Card>
-        <HeadlineTwo>Hey! I am Yik,</HeadlineTwo>
+        <HeadlineYik>Hey! I am Yik,</HeadlineYik>
         <Headline>
           <TypeIt
             options={{
@@ -101,11 +108,11 @@ export default function Hero() {
             }}
             getBeforeInit={(instance) => {
               instance
-                .type("A Writer")
+                .type("A WRITER")
                 .pause(550)
                 .delete(6)
                 .pause(300)
-                .type("Full-Stack Developer.");
+                .type("DEVELOPER focusing on React and Next.js.");
               return instance;
             }}
           />
