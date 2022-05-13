@@ -134,7 +134,11 @@ export const BasicTech = [
 export const projectData = [
   {
     id: 1,
-    image: ["/budget1.png", "/budget2.png", "/budget3.png"],
+    image: [
+      "https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Fbudget1.png?alt=media&token=df465ecf-3ded-4221-9291-ef4a0c55c6c6",
+      "https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Fbudget2.png?alt=media&token=59859e23-fe52-4c69-83c6-a6466540f4e7",
+      "https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Fbudget3.png?alt=media&token=be73a09a-9cdf-4f97-8c63-678e132fe98c",
+    ],
     title: "MoreBudget",
     details:
       " This budgeting app and its simple four-rule method can help users organize their finances, demolish their debt, save piles of cash, and reach their financial goals faster. ",
@@ -171,7 +175,10 @@ export const projectData = [
   },
   {
     id: 2,
-    image: ["/budget1.png", "/budget2.png", "/budget3.png"],
+    image: [
+      "https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Fvillage2.png?alt=media&token=e2a42048-b48a-426e-9d1d-9a9b3cfc0329",
+      "https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Fvillage.png?alt=media&token=ffbcb186-ae78-45ab-8271-fc8511fe690b",
+    ],
     title: "Village",
     details:
       " This budgeting app and its simple four-rule method can help users organize their finances, demolish their debt, save piles of cash, and reach their financial goals faster. ",
@@ -232,14 +239,16 @@ export const projectData = [
   },
   {
     id: 3,
-    image: ["/budget1.png", "/budget2.png", "/budget3.png"],
+    image: [
+      "https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Finstock.png?alt=media&token=a1890042-700e-4d5f-9939-27785003f731",
+    ],
     title: "Instock",
     details:
       " This budgeting app and its simple four-rule method can help users organize their finances, demolish their debt, save piles of cash, and reach their financial goals faster. ",
     date: "March 2022",
     status: "Finished",
     deploy: true,
-    link: "",
+    link: "https://instock-yik.herokuapp.com/warehouses",
     tech: [
       {
         id: 1,
@@ -261,7 +270,9 @@ export const projectData = [
   },
   {
     id: 4,
-    image: ["/brainflix.png"],
+    image: [
+      "https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Fbrainflix.png?alt=media&token=8e22e083-ad03-47a2-8780-03b385a847b8",
+    ],
     title: "BrainFlix",
     details:
       " This budgeting app and its simple four-rule method can help users organize their finances, demolish their debt, save piles of cash, and reach their financial goals faster. ",
@@ -290,7 +301,9 @@ export const projectData = [
   },
   {
     id: 5,
-    image: ["/bandSite.png"],
+    image: [
+      "https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2FbandSite.png?alt=media&token=f18659b9-a681-48e9-87f2-73bbb08398d2",
+    ],
     title: "Band Site",
     details:
       "My first JavaScript Project working with API. A responsive website with comments section and fetching data from API",
@@ -315,7 +328,9 @@ export const projectData = [
   },
   {
     id: 6,
-    image: ["/travelsite.png"],
+    image: [
+      "https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Ftravelsite.png?alt=media&token=7b32e731-fe6b-4d90-971b-e0f8112bbedb",
+    ],
     title: "Travel Site",
     details:
       " My first Project. A basic travel destination website, leveraging HTML, CSS, and component thinking.",
