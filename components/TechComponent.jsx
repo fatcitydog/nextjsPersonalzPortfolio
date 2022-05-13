@@ -80,7 +80,7 @@ export default function TechComponent({ title, data }) {
             </TypeIt>
             <ImageCard>
               {data.map((image) => (
-                <PlaceHolder>
+                <PlaceHolder key={image.id}>
                   <TechImage
                     whileTap={{ scale: 0.9 }}
                     key={image.id}
