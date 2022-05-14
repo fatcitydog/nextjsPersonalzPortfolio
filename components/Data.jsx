@@ -46,6 +46,11 @@ export const FrontEndData = [
   },
   {
     id: 10,
+    name: "Chart.js",
+    src: "https://cms-assets.tutsplus.com/uploads/users/1251/posts/28477/preview_image/chartjs-tutsplus.jpg",
+  },
+  {
+    id: 11,
     name: "Bootstrap",
     src: "https://www.brcline.com/wp-content/uploads/2016/01/bootstrap-logo.png",
   },
@@ -106,7 +111,7 @@ export const BasicTech = [
   },
   {
     id: 3,
-    name: "JAVASCRIPT",
+    name: "Javascript",
     src: "https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png",
   },
   {
@@ -116,7 +121,7 @@ export const BasicTech = [
   },
   {
     id: 5,
-    name: "GITHUB",
+    name: "GitHub",
     src: "https://www.theindianwire.com/wp-content/uploads/2019/05/maxresdefault-2.jpg",
   },
   {
@@ -170,6 +175,10 @@ export const projectData = [
       {
         id: 7,
         name: "MongoDB",
+      },
+      {
+        id: 8,
+        name: "Chart.js",
       },
     ],
   },
@@ -347,4 +356,81 @@ export const projectData = [
   },
 ];
 
-export const Resume = [];
+export const ResumeExpData = [
+  {
+    id: 1,
+    company: "ECCO",
+    jobName: "Sales Associate",
+    link: "https://ca.ecco.com/en",
+    date: "SEP 2021 - CURRENT",
+    location: "Toronto, ON",
+    item: [
+      "Consistently achieved sales targets by providing excellent customer service to over 50+ customers daily, by demonstrating strong interpersonal skills, communication skills, and enthusiasm",
+    ],
+  },
+  {
+    id: 2,
+    company: "Lettercult Limited",
+    jobName: "Art Administrator",
+    link: "https://samplemaghk.com/?v=3e8d115eb4b3",
+    date: "NOV 2019 - 2021",
+    location: "Hong Kong",
+    item: [
+      "Successfully organized 10+ activities for  5+ international and national events such as the HongKong Independent Book Fair 2020 & 2021 with over 50+ participants, by utilizing organizational, planning, and time management skills",
+      "Coordinated with 20+ artists, designers, service providers in productions for solving problems, dealing with conflicts",
+    ],
+  },
+  {
+    id: 3,
+    company: "SAMPLE Magazine",
+    jobName: "Editor",
+    date: "AUG 2018 - 2019",
+    location: "Hong Kong",
+    item: [
+      "Reviewed 200+ articles for grammar, spelling, punctuation, syntax, accuracy, compliance with quality standards by cultivating excellent attention to detail and using critical thinking skills to make suggestions for improvement",
+      "Published 30+  short stories and literary criticism articles",
+    ],
+  },
+];
+
+export const ResumeEducationData = [
+  {
+    id: 1,
+    school: "BrainStation",
+    eduName: "Diploma of Web Development",
+    date: "JAN 2021 - APR 2022",
+    location: "Toronto, ON",
+  },
+  {
+    id: 2,
+    school: "Hong Kong Baptist University",
+    eduName: "Bachelors of Art: Creative and Professional Writing",
+    date: "SEP 2015 - 2019",
+    location: "Hong Kong",
+  },
+];
+
+export const ResumeProjectData = [
+  {
+    id: 1,
+    projectName: "Village",
+    jobName: "Full-Stack Web Developer",
+    date: "March 2021 - APR 2022",
+    type: "Capstone Project",
+    item: [
+      "A social platform to help people connect and interact",
+      "Successfully developed by front-end and back-end technologies including React, SASS, Mui, Node.js, Express.js, Passport.js, Firebase, Knex.js, MySQL, Vite, Yarn, etc.",
+    ],
+  },
+  {
+    id: 2,
+    projectName: "MoreBudget",
+    jobName: "Full-Stack Web Developer",
+    date: "May 2022 - Current",
+    type: "Project",
+    item: [
+      "This budgeting app and its simple four-rule method can help users organize their finances, demolish their debt, save piles of cash, and reach their financial goals faster.",
+      "Developing by front-end and back-end technologies including React, Next.js, Styled Components, Motion Framer, Mui, Chart.js, Node.js, Express.js, Mongodb, Yarn, etc.",
+    ],
+  },
+];
