@@ -1,15 +1,15 @@
 import { Container, Title, Wrapper } from "../globalStyles";
 
-import styled from "styled-components";
-
-import { motion } from "framer-motion";
+import TypeItComponent from "../components/TypeIt";
 
 import ProjectComponent from "../components/ProjectComponent";
 export default function ProjectPage() {
   return (
     <Container>
       <Wrapper>
-        <Title>Project</Title>
+        <Title>
+          <TypeItComponent children={"PROJECT"} />
+        </Title>
         <ProjectComponent />
       </Wrapper>
     </Container>

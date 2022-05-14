@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 export const Container = styled.div`
-  width: 100%;
+  width: 100vw;
   min-width: 320px;
   display: flex;
   justify-content: center;
@@ -20,6 +20,7 @@ export const Container = styled.div`
   }
 `;
 export const Wrapper = styled.div`
+  width: 100%;
   color: ${(props) => props.theme.dark};
   background-color: ${(props) => props.theme.primary};
   padding: 1rem;
@@ -38,8 +39,10 @@ export const Title = styled.div`
   margin: 2rem 0;
   font-size: 2rem;
   font-weight: 600;
+  height: 2.5rem;
   @media screen and (min-width: 768px) {
-    font-size: 4rem;
+    font-size: 3rem;
+    height: 3.5rem;
   }
 `;
 

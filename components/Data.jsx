@@ -142,7 +142,7 @@ export const projectData = [
     title: "MoreBudget",
     details:
       " This budgeting app and its simple four-rule method can help users organize their finances, demolish their debt, save piles of cash, and reach their financial goals faster. ",
-    date: "Starting in May 2022",
+    date: "Starting from May 2022",
     status: "Processing",
     deploy: false,
     link: "",
@@ -346,3 +346,5 @@ export const projectData = [
     ],
   },
 ];
+
+export const Resume = [];

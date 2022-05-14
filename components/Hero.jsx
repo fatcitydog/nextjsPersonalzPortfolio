@@ -20,8 +20,8 @@ const Card = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 0.5rem;
-  background-color: ${(props) => props.theme.dark};
-  color: ${(props) => props.theme.primary};
+
+  color: ${(props) => props.theme.dark};
   border-radius: 15px;
   @media screen and (min-width: 768px) {
     width: 80%;
@@ -30,19 +30,18 @@ const Card = styled.div`
 `;
 
 const HeadlineYik = styled.div`
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 1.5rem 0;
   font-weight: 600;
   width: 100%;
   text-align: center;
   @media screen and (min-width: 768px) {
-    width: 10rem;
-
+    width: 18rem;
     margin-right: 2rem;
   }
 `;
 const Headline = styled.div`
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 1.5rem 0;
   text-align: start;
   width: 100%;
@@ -50,7 +49,7 @@ const Headline = styled.div`
   font-weight: 600;
   @media screen and (min-width: 768px) {
     width: 70%;
-    height: 1.2rem;
+    height: 3rem;
   }
 `;
 
@@ -76,9 +75,10 @@ const PlaceHolder = styled.div`
 `;
 
 const IconImage = styled.img`
-  width: 70vw;
-  height: auto;
-  border-radius: 15px;
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   @media screen and (min-width: 768px) {
     width: 25rem;
@@ -108,11 +108,11 @@ export default function Hero() {
             }}
             getBeforeInit={(instance) => {
               instance
-                .type("A WRITER")
+                .type("A Writer")
                 .pause(550)
                 .delete(6)
                 .pause(300)
-                .type("DEVELOPER focusing on React and Next.js.");
+                .type("Developer focusing on React and Next.js.");
               return instance;
             }}
           />

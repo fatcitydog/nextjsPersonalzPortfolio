@@ -2,14 +2,14 @@ import styled from "styled-components";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import TypeIt from "typeit-react";
+import TypeItComponent from "./TypeIt";
 import { squareVariants } from "../globalStyles";
 
 const TechCard = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+
   margin: 1rem 0;
   height: 100vh;
   @media screen and (min-width: 768px) {
@@ -20,25 +20,24 @@ const TechCard = styled.section`
 const AnimationCard = styled(motion.div)`
   display: flex;
   flex-direction: column;
-  justify-content: center;
 `;
 const Box = styled.div`
-  height: 3rem;
+  height: 1.5rem;
   margin-bottom: 1rem 0;
-  @media screen and (min-width: 768px) {
-    margin: 2rem 0;
-  }
-`;
-const SubTitle = styled.div`
-  color: black;
   font-size: 1.3rem;
   font-weight: 600;
+  @media screen and (min-width: 768px) {
+    margin: 2rem 0;
+    font-size: 1.8rem;
+  }
 `;
+
 const ImageCard = styled.div`
   display: flex;
   flex-direction: row;
+
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
 `;
 const TechImage = styled(motion.img)`
   max-width: 6.5rem;
@@ -79,14 +78,7 @@ export default function TechComponent({ title, data }) {
       >
         {inView && (
           <Box>
-            <TypeIt
-              options={{
-                speed: 30,
-                cursor: false,
-              }}
-            >
-              <SubTitle>{title}</SubTitle>
-            </TypeIt>
+            <TypeItComponent children={title} />
           </Box>
         )}
         {inView && (

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { LinkStyled, FlexBox, Detail } from "../globalStyles";
 
-import { useAnimation, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { projectData } from "./Data";
 
@@ -21,14 +21,14 @@ const Square = styled.div`
   width: 100%;
   border: 1px solid #ced4da;
   color: ${(props) => props.theme.primary};
-  background-color: ${(props) => props.theme.dark};
+  background-color: #212529;
   @media screen and (min-width: 768px) {
-    width: 48%;
+    width: 28rem;
     padding: 1rem;
   }
 `;
 const SubTitle = styled.div`
-  margin: 1rem 0;
+  margin: 2rem 0 1rem 0;
   font-size: 1rem;
   font-weight: 600;
   @media screen and (min-width: 768px) {
@@ -46,7 +46,7 @@ const ProjectImage = styled(motion.img)`
   display: block;
   object-fit: cover;
   object-position: 50% 0;
-  height: 20rem;
+  height: 25rem;
   width: 80vw;
   transition: 0.5s ease;
   backface-visibility: hidden;
@@ -58,8 +58,8 @@ const ProjectImage = styled(motion.img)`
     z-index: 1;
   }
   @media screen and (min-width: 768px) {
-    width: 20rem;
-    height: 23rem;
+    width: 25rem;
+    height: 25rem;
   }
 `;
 
@@ -68,6 +68,7 @@ const TechBox = styled(FlexBox)`
   justify-content: flex-start;
   margin-top: 2rem;
 `;
+
 const TechText = styled.div`
   font-size: 0.6rem;
   margin: 0.2rem 0.5rem;
@@ -76,6 +77,9 @@ const TechText = styled.div`
   border-radius: 25px;
   color: ${(props) => props.theme.dark};
   background-color: ${(props) => props.theme.primary};
+  @media screen and (min-width: 768px) {
+    font-size: 0.8rem;
+  }
 `;
 
 // const StatusBox = styled.p`
@@ -83,29 +87,43 @@ const TechText = styled.div`
 //   right: 2rem;
 //   font-size: 0.7rem;
 // `;
-const DetailBox = styled(Detail)`
-  position: absolute;
+const TextBox = styled(Detail)`
   text-align: start;
-  margin-top: 2.5rem;
-  width: 16rem;
   font-size: 1.2rem;
   color: ${(props) => props.theme.primary};
   @media screen and (min-width: 768px) {
-    margin-top: 4rem;
+    width: 90%;
   }
 `;
+const DetailBox = styled.div`
+  position: absolute;
+  margin-top: 2.5rem;
+  width: 16rem;
+  @media screen and (min-width: 768px) {
+    margin-top: 4rem;
+    width: 24rem;
+  }
+`;
+const DateBox = styled.div`
+  color: ${(props) => props.theme.dark};
+  background-color: ${(props) => props.theme.primary};
+  position: absolute;
+  right: 0;
+`;
+
 export default function ProjectComponent() {
   return (
     <ProjectBox>
       {projectData.map((project) => (
         <Square key={project.id}>
-          <SubTitle>{project.title}</SubTitle>
           {/* <StatusBox>{project.status}</StatusBox> */}
           <Bigbox>
             <ProjectImage src={project.image[0]} />
 
             <DetailBox>
-              {project.details}
+              <DateBox>{project.date}</DateBox>
+              <SubTitle>{project.title}</SubTitle>
+              <TextBox>{project.details}</TextBox>
               <TechBox>
                 {project.tech.map((logo) => (
                   <TechText key={logo.id}>{logo.name}</TechText>
