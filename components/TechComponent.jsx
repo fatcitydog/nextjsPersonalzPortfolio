@@ -78,7 +78,7 @@ export default function TechComponent({ title, data }) {
       >
         {inView && (
           <Box>
-            <TypeItComponent children={title} />
+            <TypeItComponent title={title} />
           </Box>
         )}
         {inView && (

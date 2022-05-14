@@ -8,7 +8,7 @@ export default function ProjectPage() {
     <Container>
       <Wrapper>
         <Title>
-          <TypeItComponent children={"PROJECT"} />
+          <TypeItComponent title={"PROJECT"} />
         </Title>
         <ProjectComponent />
       </Wrapper>

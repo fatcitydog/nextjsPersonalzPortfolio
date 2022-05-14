@@ -20,7 +20,7 @@ export default function ResumeComponent() {
         target="_blank"
         href="https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2FYik_Tung_Yeung_RESUME.pdf?alt=media&token=a2479315-5a8b-4e68-8c7f-239800ce7ad0"
       >
-        Yik's Resume.pdf
+        My Resume.pdf
       </ResumeLink>
     </ResumeBox>
   );

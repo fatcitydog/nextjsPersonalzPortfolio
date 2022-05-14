@@ -1,5 +1,5 @@
 import TypeIt from "typeit-react";
-export default function TypeItComponent({ children }) {
+export default function TypeItComponent({ title }) {
   return (
     <TypeIt
       options={{
@@ -7,7 +7,7 @@ export default function TypeItComponent({ children }) {
         cursor: false,
       }}
     >
-      {children}
+      {title}
     </TypeIt>
   );
 }

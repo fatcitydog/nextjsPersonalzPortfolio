@@ -6,7 +6,7 @@ export default function ResumePage() {
     <Container>
       <Wrapper>
         <Title>
-          <TypeItComponent children={"RESUME"} />
+          <TypeItComponent title={"RESUME"} />
         </Title>
         <ResumeComponent />
       </Wrapper>
