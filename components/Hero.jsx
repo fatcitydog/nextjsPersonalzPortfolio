@@ -92,7 +92,7 @@ export default function Hero() {
     <HeroCard>
       <Card>
         <HeadlineYik>Hey!</HeadlineYik>
-        <HeadlineYik>I am Yik</HeadlineYik>
+        <HeadlineYik>I&#39;m Yik</HeadlineYik>
         <Headline>
           <TypeIt
             options={{

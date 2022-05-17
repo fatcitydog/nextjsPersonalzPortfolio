@@ -43,7 +43,7 @@ export default function Footer() {
   return (
     <FooterBox>
       <ColumnBox>
-        <FooterTtile>Let's</FooterTtile>
+        <FooterTtile>Let&#39;s</FooterTtile>
         <FooterTtile>Connect</FooterTtile>
       </ColumnBox>
       <RowBox>
