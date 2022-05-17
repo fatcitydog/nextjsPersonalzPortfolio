@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Familjen Grotesk', sans-serif;
 
   }
 `;
@@ -16,15 +16,15 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1000px) {
   }
 `;
 export const Wrapper = styled.div`
   width: 100%;
-  color: ${(props) => props.theme.dark};
-  background-color: ${(props) => props.theme.primary};
+  /* color: ${(props) => props.theme.dark};
+  background-color: ${(props) => props.theme.primary}; */
   padding: 1rem;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1000px) {
     max-width: 1280px;
     padding: 0 6rem;
   }
@@ -40,7 +40,7 @@ export const Title = styled.div`
   font-size: 2rem;
   font-weight: 600;
   height: 2.5rem;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1000px) {
     font-size: 3rem;
     height: 3.5rem;
   }
@@ -49,12 +49,12 @@ export const Title = styled.div`
 export const LinkStyled = styled.a`
   padding: 0.5rem 1rem;
   margin: 1rem;
-  border-radius: 25px;
+
   text-decoration: none;
   text-align: center;
-  width: 80%;
-  border: 1px solid #ced4da;
-  color: ${(props) => props.theme.primary};
+  width: 15rem;
+  background-color: #ced4da;
+  color: white;
   &:hover {
     background-color: #ced4da;
     color: ${(props) => props.theme.primary};
@@ -64,9 +64,9 @@ export const LinkStyled = styled.a`
 export const Detail = styled.p`
   font-size: 1rem;
   line-height: 1.6;
-  text-align: justify;
+  text-align: start;
   margin-bottom: 1rem;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1000px) {
     width: 70%;
   }
 `;

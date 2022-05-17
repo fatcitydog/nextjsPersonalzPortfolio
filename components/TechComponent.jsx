@@ -12,7 +12,7 @@ const TechCard = styled.section`
 
   margin: 1rem 0;
   height: 100vh;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1000px) {
     height: 50vh;
   }
 `;
@@ -26,7 +26,7 @@ const Box = styled.div`
   margin-bottom: 1rem 0;
   font-size: 1.3rem;
   font-weight: 600;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1000px) {
     margin: 2rem 0;
     font-size: 1.8rem;
   }

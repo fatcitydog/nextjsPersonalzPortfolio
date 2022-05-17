@@ -1,11 +1,12 @@
 import { Fragment } from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 import styled, { ThemeProvider } from "styled-components";
 import { useState } from "react";
 import { motion } from "framer-motion";
 const theme = {
-  primary: "#F8F9FA",
-  dark: "#212529",
+  primary: "white",
+  dark: "black",
 };
 
 const Box = styled.div`

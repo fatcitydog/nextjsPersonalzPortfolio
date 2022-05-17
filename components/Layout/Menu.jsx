@@ -18,7 +18,7 @@ const Navbar = styled(motion.nav)`
   left: 0;
   z-index: 20;
   color: white;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1000px) {
     display: none;
   }
 `;
@@ -27,34 +27,32 @@ const RouterList = styled(motion.div)`
   display: flex;
   flex-direction: column;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1000px) {
     flex-direction: row;
   }
 `;
 const HeaderMenuIcon = styled(MenuIcon)`
-  position: absolute;
-  left: 1rem;
-  @media screen and (min-width: 768px) {
+  color: white;
+  margin: 1rem 1rem 0 0;
+  @media screen and (min-width: 1000px) {
     display: none;
   }
 `;
 
 const DesktopMenu = styled.div`
   display: none;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1000px) {
     display: flex;
-    position: absolute;
-    right: 10rem;
-    top: 1rem;
-    width: 40vw;
+    font-size: 1.5rem;
+    color: white;
   }
 `;
 
 const CloseMenuIcon = styled(LargeCloseIcon)`
   transform: scale(2);
-  position: absolute;
-  left: 1rem;
-  @media screen and (min-width: 768px) {
+  color: white;
+
+  @media screen and (min-width: 1000px) {
     display: none;
   }
 `;
@@ -69,10 +67,8 @@ const sideVariants = {
 };
 
 const links = [
-  { children: "Home", href: "/", id: 1 },
-  { children: "Project", href: "/project", id: 2 },
-  { children: "Resume", href: "/resume", id: 3 },
-  { children: "Contact", href: "/contact", id: 4 },
+  { children: "about", href: "/", id: 1 },
+  { children: "project", href: "/project", id: 2 },
 ];
 
 export default function Menu() {

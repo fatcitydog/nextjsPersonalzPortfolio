@@ -14,12 +14,16 @@ const StyledLink = styled.a`
 const MenuLink = styled(motion.a)`
   margin: 1rem;
   padding: 1rem;
+  font-size: 1.5rem;
   &:active {
     color: black;
     background-color: white;
   }
   border-bottom: 0.5px solid white;
   &:last-child {
+    border-bottom: none;
+  }
+  @media screen and (min-width: 1000px) {
     border-bottom: none;
   }
 `;
@@ -29,12 +33,6 @@ const itemVariants = {
   },
   open: { opacity: 1 },
 };
-
-export const SpecialLink = styled.a`
-  text-decoration: underline;
-  cursor: pointer;
-  color: #138bfc;
-`;
 
 export const RouterLink = ({ href, children }) => (
   <Link href={href}>
