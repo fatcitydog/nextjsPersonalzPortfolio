@@ -91,12 +91,14 @@ const DetailTextBox = styled.div`
 
 const LinkTag = styled.a`
   color: white;
+  text-decoration: underline;
+  &:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+  }
 `;
 
-const LinkTagPro = styled(Link)`
-  color: white;
-  font-size: 5rem;
-`;
 export default function Hero() {
   return (
     <HeroCard>
@@ -136,20 +138,32 @@ export default function Hero() {
             with no limitation.
           </Detail>
           <Detail>
-            Check out my projects: <LinkTag href="">Budget</LinkTag>,{" "}
-            <LinkTagPro href="/village">Village</LinkTagPro>,{" "}
-            <LinkTag href="https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Finstock.png?alt=media&token=a1890042-700e-4d5f-9939-27785003f731">
+            Check out my projects:{" "}
+            <Link href="/village">
+              <LinkTag>Village</LinkTag>
+            </Link>
+            ,{" "}
+            <LinkTag
+              target="_blank"
+              href="https://instock-yik.herokuapp.com/warehouses"
+            >
               Instock
             </LinkTag>
             ,{" "}
-            <LinkTag href="https://brainflix-yik.herokuapp.com/videos/c05b9a93-8682-4ab6-aff2-92ebb4bbfc14">
+            <LinkTag
+              target="_blank"
+              href="https://brainflix-yik.herokuapp.com/videos/c05b9a93-8682-4ab6-aff2-92ebb4bbfc14"
+            >
               BrainFlix
             </LinkTag>
             ,{" "}
-            <LinkTag href="https://band-site-six.vercel.app/">
-              Band Site
+            <LinkTag target="_blank" href="https://band-site-six.vercel.app/">
+              Band Site,{" "}
             </LinkTag>
-            <LinkTag href="https://travelsite-rho.vercel.app/index.html">
+            <LinkTag
+              target="_blank"
+              href="https://travelsite-rho.vercel.app/index.html"
+            >
               Travel Site
             </LinkTag>{" "}
             or just scroll down.

@@ -146,7 +146,7 @@ export const projectData = [
     ],
     title: "MoreBudget 2022",
     details:
-      " This budgeting app and its simple four-rule method can help users organize their finances, demolish their debt, save piles of cash, and reach their financial goals faster. ",
+      " My current project is a budgeting app developping by Next.js, Typescript, Styled Components and MongoDB. Using simple method to help users organize their finances, demolish their debt, save piles of cash, and reach their financial goals faster. ",
     date: "Starting from May 2022",
     status: "Processing",
     deploy: false,
@@ -215,7 +215,7 @@ export const projectData = [
   {
     id: 2,
     image: [
-      "https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Fvillage2.png?alt=media&token=e2a42048-b48a-426e-9d1d-9a9b3cfc0329",
+      "https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2FScreenshot%202022-05-18%20at%2012.13.25%20PM.png?alt=media&token=f52647a9-be76-4510-a23c-29555ee36d32",
       "https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Fvillage.png?alt=media&token=ffbcb186-ae78-45ab-8271-fc8511fe690b",
     ],
     title: "Village 2022",
@@ -223,7 +223,7 @@ export const projectData = [
       " My first react hooks and real full-stack project. A social platform to help people connect and interact. User can login to edit their portfolio as well as post and apply for jobs. ",
     date: "March - April 2022",
     status: "Processing",
-    deploy: false,
+    deploy: true,
     link: "/village",
     tech: [
       {
@@ -279,7 +279,7 @@ export const projectData = [
     ],
     title: "Instock 2022",
     details:
-      " My first group project. A deliver an Inventory Management System for a Fortune 500 client to manage stock room and items.",
+      " My first group project. A deliver an Inventory Management System for a Fortune 500 client to manage stock room and items. This website is deployed by HeroKu, please wait 1 - 2 minutes for the server wake up. Thank you.",
     date: "March 2022",
     status: "Finished",
     deploy: true,
@@ -310,7 +310,7 @@ export const projectData = [
     ],
     title: "BrainFlix 2022",
     details:
-      " My first react Project using class Components. A video streaming platform called BrainFlix, able to upload new video to API.",
+      " My first react Project using class Components. A video streaming platform called BrainFlix, able to upload new video to API. This website is deployed by HeroKu, please wait 1 - 2 minutes for the server wake up. Thank you.",
     date: "March 2022",
     status: "Finished",
     deploy: true,

@@ -142,9 +142,11 @@ export default function ProjectComponent() {
                 <TechText key={logo.id}>{logo.name}</TechText>
               ))}
             </TechBox>
-            <LinkStyled target="_blank" href={project.link}>
-              VIEW DEMO
-            </LinkStyled>
+            {project.deploy && (
+              <LinkStyled target="_blank" href={project.link}>
+                VIEW DEMO
+              </LinkStyled>
+            )}
           </Bigbox>
           {/* <StatusBox>{project.status}</StatusBox> */}
           <Bigbox>
