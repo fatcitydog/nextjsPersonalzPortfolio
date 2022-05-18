@@ -138,37 +138,6 @@ export const BasicTech = [
 
 export const projectData = [
   {
-    id: 7,
-    image: [
-      "https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Fbudget1.png?alt=media&token=df465ecf-3ded-4221-9291-ef4a0c55c6c6",
-      "https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Fbudget2.png?alt=media&token=59859e23-fe52-4c69-83c6-a6466540f4e7",
-      "https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Fbudget3.png?alt=media&token=be73a09a-9cdf-4f97-8c63-678e132fe98c",
-    ],
-    title: "Yik's Portfolio 2022",
-    details: "",
-    status: "Processing",
-    deploy: true,
-    link: "https://yik-portfolio.vercel.app/",
-    tech: [
-      {
-        id: 2,
-        name: "Next.js",
-      },
-      {
-        id: 3,
-        name: "JavaScript",
-      },
-      {
-        id: 4,
-        name: "Styled Components",
-      },
-      {
-        id: 5,
-        name: "Motion Framer",
-      },
-    ],
-  },
-  {
     id: 1,
     image: [
       "https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Fbudget1.png?alt=media&token=df465ecf-3ded-4221-9291-ef4a0c55c6c6",
@@ -214,6 +183,36 @@ export const projectData = [
     ],
   },
   {
+    id: 7,
+    image: [
+      "https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2FScreenshot%202022-05-18%20at%201.47.53%20AM.png?alt=media&token=69992e66-08a7-4ee4-8523-7bcf9e85e88e",
+    ],
+    title: "Yik's Portfolio 2022",
+    details:
+      "My first Next.js project. Working with styled componets to design a professional portfolio.",
+    status: "Finish",
+    deploy: true,
+    link: "https://yik-portfolio.vercel.app/",
+    tech: [
+      {
+        id: 2,
+        name: "Next.js",
+      },
+      {
+        id: 3,
+        name: "JavaScript",
+      },
+      {
+        id: 4,
+        name: "Styled Components",
+      },
+      {
+        id: 5,
+        name: "Motion Framer",
+      },
+    ],
+  },
+  {
     id: 2,
     image: [
       "https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Fvillage2.png?alt=media&token=e2a42048-b48a-426e-9d1d-9a9b3cfc0329",
@@ -221,11 +220,11 @@ export const projectData = [
     ],
     title: "Village 2022",
     details:
-      " This budgeting app and its simple four-rule method can help users organize their finances, demolish their debt, save piles of cash, and reach their financial goals faster. ",
+      " My first react hooks and real full-stack project. A social platform to help people connect and interact. User can login to edit their portfolio as well as post and apply for jobs. ",
     date: "March - April 2022",
     status: "Processing",
     deploy: false,
-    link: "",
+    link: "/village",
     tech: [
       {
         id: 1,
@@ -280,7 +279,7 @@ export const projectData = [
     ],
     title: "Instock 2022",
     details:
-      " This budgeting app and its simple four-rule method can help users organize their finances, demolish their debt, save piles of cash, and reach their financial goals faster. ",
+      " My first group project. A deliver an Inventory Management System for a Fortune 500 client to manage stock room and items.",
     date: "March 2022",
     status: "Finished",
     deploy: true,
@@ -311,7 +310,7 @@ export const projectData = [
     ],
     title: "BrainFlix 2022",
     details:
-      " This budgeting app and its simple four-rule method can help users organize their finances, demolish their debt, save piles of cash, and reach their financial goals faster. ",
+      " My first react Project using class Components. A video streaming platform called BrainFlix, able to upload new video to API.",
     date: "March 2022",
     status: "Finished",
     deploy: true,
@@ -342,7 +341,7 @@ export const projectData = [
     ],
     title: "Band Site 2022",
     details:
-      "My first JavaScript Project working with API. A responsive website with comments section and fetching data from API",
+      "My first JavaScript Project working with API. A responsive website with comments section and fetching data from API.",
     date: "Feb 2022",
     status: "Finished",
     deploy: true,

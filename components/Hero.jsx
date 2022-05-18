@@ -2,7 +2,9 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import TypeIt from "typeit-react";
 import { Detail } from "../globalStyles";
-import { FooterLink } from "./Layout/Footer";
+
+import Link from "next/link";
+
 const HeroCard = styled.div`
   display: flex;
   flex-direction: column;
@@ -30,13 +32,12 @@ const HeadlineYik = styled.div`
   font-weight: 600;
 
   @media screen and (min-width: 1000px) {
-    font-size: 14rem;
+    font-size: 12rem;
   }
 `;
-const Headline = styled.div`
+export const Headline = styled.div`
   font-size: 1.3rem;
   margin: 1.5rem 0;
-  text-align: start;
   width: 100%;
   height: 4rem;
   font-weight: 600;
@@ -55,6 +56,7 @@ const DetailCard = styled.div`
     flex-direction: row;
     align-items: flex-start;
     margin-top: 4rem;
+    justify-content: space-between;
   }
 `;
 const PlaceHolder = styled.div`
@@ -81,12 +83,20 @@ const DetailTextBox = styled.div`
   display: flex;
   flex-direction: column;
   width: auto;
-  align-items: center;
+
   @media screen and (min-width: 1000px) {
     width: 35%;
   }
 `;
 
+const LinkTag = styled.a`
+  color: white;
+`;
+
+const LinkTagPro = styled(Link)`
+  color: white;
+  font-size: 5rem;
+`;
 export default function Hero() {
   return (
     <HeroCard>
@@ -126,8 +136,23 @@ export default function Hero() {
             with no limitation.
           </Detail>
           <Detail>
-            Check out my projects: Budget, Village, Instock, BrainFlix, Band
-            Site, Travel Site or just scroll down.
+            Check out my projects: <LinkTag href="">Budget</LinkTag>,{" "}
+            <LinkTagPro href="/village">Village</LinkTagPro>,{" "}
+            <LinkTag href="https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Finstock.png?alt=media&token=a1890042-700e-4d5f-9939-27785003f731">
+              Instock
+            </LinkTag>
+            ,{" "}
+            <LinkTag href="https://brainflix-yik.herokuapp.com/videos/c05b9a93-8682-4ab6-aff2-92ebb4bbfc14">
+              BrainFlix
+            </LinkTag>
+            ,{" "}
+            <LinkTag href="https://band-site-six.vercel.app/">
+              Band Site
+            </LinkTag>
+            <LinkTag href="https://travelsite-rho.vercel.app/index.html">
+              Travel Site
+            </LinkTag>{" "}
+            or just scroll down.
           </Detail>
         </DetailTextBox>
         <PlaceHolder>

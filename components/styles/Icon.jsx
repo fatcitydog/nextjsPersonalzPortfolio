@@ -34,10 +34,13 @@ export const NoteIcon = styled(MdOutlineStickyNote2)`
 `;
 
 const PlusLogo = styled(motion.img)`
-  width: 3.5rem;
+  width: 3rem;
+  @media screen and (min-width: 1000px) {
+    width: 5rem;
+  }
 `;
 
-export const MotionIcon = ({ action, image }) => {
+export const MotionIcon = ({ image }) => {
   const animation = useAnimation();
   async function sequence() {
     await animation.start({ rotate: -90 });
@@ -49,9 +52,15 @@ export const MotionIcon = ({ action, image }) => {
   return (
     <PlusLogo
       src={image}
+      drag
+      dragConstraints={{
+        top: -125,
+        right: 125,
+        bottom: 125,
+        left: -125,
+      }}
       whileHover={sequence}
       animate={animation}
-      onClick={action}
     />
   );
 };

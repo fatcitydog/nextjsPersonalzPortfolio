@@ -27,7 +27,10 @@ const ColumnBox = styled(FlexBox)`
 `;
 const FooterTtile = styled.div`
   font-weight: 800;
-  font-size: 8vw;
+  font-size: 3rem;
+  @media screen and (min-width: 1000px) {
+    font-size: 8vw;
+  }
 `;
 export const FooterLink = styled.a`
   font-size: 1.5rem;
@@ -38,10 +41,13 @@ export const FooterLink = styled.a`
     background-color: black;
     color: white;
   }
+  @media screen and (min-width: 1000px) {
+    font-size: 1.5rem;
+  }
 `;
 export default function Footer() {
   return (
-    <FooterBox>
+    <FooterBox id="contact">
       <ColumnBox>
         <FooterTtile>Let&#39;s</FooterTtile>
         <FooterTtile>Connect</FooterTtile>
@@ -64,7 +70,7 @@ export default function Footer() {
           </FooterLink>
           <FooterLink
             target="_blank"
-            href="https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2FYik_Tung_Yeung_RESUME.pdf?alt=media&token=a2479315-5a8b-4e68-8c7f-239800ce7ad0"
+            href="https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Fresume-yik.pdf?alt=media&token=3b11d87e-6988-4000-8aaf-84609c88f9a3"
           >
             Resume.pdf
           </FooterLink>

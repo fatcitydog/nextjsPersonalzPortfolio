@@ -11,9 +11,10 @@ const TechCard = styled.section`
   flex-direction: column;
 
   margin: 1rem 0;
-  height: 100vh;
+  height: 50rem;
   @media screen and (min-width: 1000px) {
-    height: 50vh;
+    height: 45vh;
+    margin-bottom: 3rem;
   }
 `;
 
