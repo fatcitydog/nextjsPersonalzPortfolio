@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import TypeIt from "typeit-react";
 import { Detail } from "../globalStyles";
 
-import Link from "next/link";
+import Link from "next/Link";
 
 const HeroCard = styled.div`
   display: flex;
