@@ -3,7 +3,7 @@ import Head from "next/head";
 import TypeItComponent from "../components/TypeIt";
 import { Headline } from "../components/Hero";
 import styled from "styled-components";
-import Link from "next/Link";
+import Link from "next/link";
 const Details = styled(Headline)`
   font-size: 1.2rem;
 `;

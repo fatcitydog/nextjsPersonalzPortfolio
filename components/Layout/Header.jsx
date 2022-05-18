@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Link from "next/link";
+import Link from 'next/link'
 import Menu from "./Menu";
 import { MotionIcon } from "../styles/Icon";
 import { motion } from "framer-motion";
