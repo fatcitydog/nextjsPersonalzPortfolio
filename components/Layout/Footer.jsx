@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Link from "next/link";
 import { FlexBox } from "../../globalStyles";
 const FooterBox = styled.nav`
-  padding: 1rem;
+  padding: 2rem;
   height: 20rem;
   display: flex;
   flex-direction: column;
@@ -12,6 +12,7 @@ const FooterBox = styled.nav`
   background-color: white;
   @media screen and (min-width: 1000px) {
     height: 25rem;
+    padding: 3rem;
   }
 `;
 
@@ -27,9 +28,9 @@ const ColumnBox = styled(FlexBox)`
 `;
 const FooterTtile = styled.div`
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 4rem;
   @media screen and (min-width: 1000px) {
-    font-size: 8vw;
+    font-size: 7vw;
   }
 `;
 export const FooterLink = styled.a`

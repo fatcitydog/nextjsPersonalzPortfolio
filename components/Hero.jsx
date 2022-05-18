@@ -65,7 +65,7 @@ const PlaceHolder = styled.div`
   margin-bottom: 2rem;
   justify-content: center;
   @media screen and (min-width: 1000px) {
-    width: 50vw;
+    width: 45vw;
   }
 `;
 
@@ -85,7 +85,7 @@ const DetailTextBox = styled.div`
   width: auto;
 
   @media screen and (min-width: 1000px) {
-    width: 35%;
+    width: 100%;
   }
 `;
 

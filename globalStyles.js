@@ -62,7 +62,7 @@ export const LinkStyled = styled.a`
 `;
 
 export const Detail = styled.p`
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
   text-align: start;
   margin-bottom: 1rem;
