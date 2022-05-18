@@ -63,7 +63,10 @@ export default function Footer() {
           </FooterLink>
         </ColumnBox>
         <ColumnBox>
-          <FooterLink target="_blank" href="www.linkedin.com/in/yik-tung-yeung">
+          <FooterLink
+            target="_blank"
+            href="https://www.linkedin.com/in/yik-tung-yeung"
+          >
             Linkedin
           </FooterLink>
           <FooterLink target="_blank" href="https://github.com/fatcitydog">

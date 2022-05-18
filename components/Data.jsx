@@ -146,7 +146,7 @@ export const projectData = [
     ],
     title: "MoreBudget 2022",
     details:
-      " My current project is a budgeting app developping by Next.js, Typescript, Styled Components and MongoDB. Using simple method to help users organize their finances, demolish their debt, save piles of cash, and reach their financial goals faster. ",
+      "My current project is a budgeting app developed by Next.js, Typescript, Styled Components and MongoDB. Using simple methods to help users organize their finances, demolish their debt, save piles of cash, and reach their financial goals faster.",
     date: "Starting from May 2022",
     status: "Processing",
     deploy: false,
