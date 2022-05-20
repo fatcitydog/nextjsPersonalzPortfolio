@@ -59,7 +59,7 @@ export const LinkStyled = styled.a`
   color: white;
   &:hover {
     background-color: #ced4da;
-    color: ${(props) => props.theme.primary};
+    color: ;
   }
 `;
 

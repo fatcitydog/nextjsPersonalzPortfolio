@@ -46,6 +46,10 @@ const ToggleIcon = styled.span`
   position: absolute;
   top: 1.4rem;
   right: 5.5rem;
+  @media screen and (min-width: 1000px) {
+    top: 2.2rem;
+    right: 25%;
+  }
 `;
 
 export const MotionIcon = ({ image }) => {
