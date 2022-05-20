@@ -75,8 +75,8 @@ const ProjectImage = styled(motion.img)`
     z-index: 1;
   }
   @media screen and (min-width: 1000px) {
-    width: 45vw;
-    height: 30vw;
+    width: 35rem;
+    height: 25rem;
   }
 `;
 
@@ -91,7 +91,7 @@ const TechText = styled.div`
   padding: 0.2rem 0.4rem;
 
   border-radius: 25px;
-  color: black;
+
   border: 1px solid black;
   @media screen and (min-width: 1000px) {
     font-size: 1.5rem;
@@ -107,7 +107,7 @@ const TechText = styled.div`
 const TextBox = styled(Detail)`
   text-align: start;
   font-size: 1.2rem;
-  color: black;
+
   @media screen and (min-width: 1000px) {
     width: 100%;
     font-size: 1.6rem;

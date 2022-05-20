@@ -2,11 +2,10 @@ import styled from "styled-components";
 import { motion, useCycle } from "framer-motion";
 import { MenuIcon, LargeCloseIcon } from "../styles/Icon";
 import { HeaderMenuLink } from "../styles/StyledLink";
-import { useRouter } from "next/router";
-import { LinkStyled } from "../../globalStyles";
+
 const Navbar = styled(motion.nav)`
   margin: 20px 0;
-  padding: 2rem;
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.95);
@@ -14,7 +13,8 @@ const Navbar = styled(motion.nav)`
   position: absolute;
   height: 100vh;
   width: 100vw;
-  top: 4.5rem;
+  top: 2.7rem;
+  cursor: pointer;
   left: 0;
   z-index: 20;
   color: white;

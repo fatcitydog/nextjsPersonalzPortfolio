@@ -3,7 +3,8 @@ import { LinkStyled, FlexBox } from "../globalStyles";
 import { useEffect } from "react";
 
 const ResumeLink = styled(LinkStyled)`
-  color: black;
+  color: ${(props) => props.theme};
+
   border: none;
   border-bottom: 1px solid black;
 

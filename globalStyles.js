@@ -21,8 +21,8 @@ export const Container = styled.div`
 `;
 export const Wrapper = styled.div`
   width: 100%;
-  /* color: ${(props) => props.theme.dark};
-  background-color: ${(props) => props.theme.primary}; */
+  color: ${(props) => props.theme};
+  background-color: ${(props) => props.theme};
   padding: 1rem;
   @media screen and (min-width: 1000px) {
     max-width: 1280px;
@@ -40,6 +40,8 @@ export const Title = styled.div`
   font-size: 2rem;
   font-weight: 600;
   height: 2.5rem;
+  color: ${(props) => props.theme};
+  background-color: ${(props) => props.theme};
   @media screen and (min-width: 1000px) {
     font-size: 3rem;
     height: 3.5rem;

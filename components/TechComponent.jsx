@@ -9,11 +9,12 @@ const TechCard = styled.section`
   width: 100%;
   display: flex;
   flex-direction: column;
-
+  align-items: center;
+  justify-content: center;
   margin: 1rem 0;
-  height: 50rem;
+  height: 70vh;
   @media screen and (min-width: 1000px) {
-    height: 45vh;
+    height: 22rem;
     margin-bottom: 3rem;
   }
 `;

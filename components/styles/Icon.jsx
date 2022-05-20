@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import { motion, useAnimation } from "framer-motion";
-
+import { BsToggleOn, BsToggleOff } from "react-icons/bs";
 import { VscGrabber, VscChromeClose, VscTriangleLeft } from "react-icons/vsc";
 // import { BsPatchPlusFill } from "react-icons/bs";
 import { MdOutlineStickyNote2 } from "react-icons/md";
@@ -39,6 +39,14 @@ const PlusLogo = styled(motion.img)`
     width: 5rem;
   }
 `;
+const ToggleIcon = styled.span`
+  font-size: 30px;
+  color: white;
+  vertical-align: middle;
+  position: absolute;
+  top: 1.4rem;
+  right: 5.5rem;
+`;
 
 export const MotionIcon = ({ image }) => {
   const animation = useAnimation();
@@ -71,3 +79,17 @@ export const MotionIcon = ({ image }) => {
 //   bottom: 2rem;
 //   right: 2rem;
 // `;
+
+export const ToggleTheme = ({ toggleTheme, isLight }) => (
+  <>
+    {isLight ? (
+      <ToggleIcon>
+        <BsToggleOff onClick={toggleTheme} />
+      </ToggleIcon>
+    ) : (
+      <ToggleIcon>
+        <BsToggleOn onClick={toggleTheme} />
+      </ToggleIcon>
+    )}
+  </>
+);

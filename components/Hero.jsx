@@ -65,7 +65,7 @@ const PlaceHolder = styled.div`
   margin-bottom: 2rem;
   justify-content: center;
   @media screen and (min-width: 1000px) {
-    width: 45vw;
+    width: 35rem;
   }
 `;
 
@@ -75,7 +75,7 @@ const IconImage = styled.img`
 
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   @media screen and (min-width: 1000px) {
-    width: 45vw;
+    width: 35rem;
   }
 `;
 
@@ -90,11 +90,11 @@ const DetailTextBox = styled.div`
 `;
 
 const LinkTag = styled.a`
-  color: white;
+  color: ${(props) => props.theme.text};
   text-decoration: underline;
   &:hover {
-    background-color: white;
-    color: black;
+    color: ${(props) => props.theme.body};
+    background-color: ${(props) => props.theme.text};
     text-decoration: none;
   }
 `;

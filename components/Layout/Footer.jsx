@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Link from "next/link";
+
 import { FlexBox } from "../../globalStyles";
 const FooterBox = styled.nav`
   padding: 2rem;
@@ -30,7 +30,7 @@ const FooterTtile = styled.div`
   font-weight: 800;
   font-size: 4rem;
   @media screen and (min-width: 1000px) {
-    font-size: 7vw;
+    font-size: 6rem;
   }
 `;
 export const FooterLink = styled.a`
@@ -38,6 +38,7 @@ export const FooterLink = styled.a`
   font-weight: 800;
   text-decoration: none;
   color: black;
+
   &:hover {
     background-color: black;
     color: white;
