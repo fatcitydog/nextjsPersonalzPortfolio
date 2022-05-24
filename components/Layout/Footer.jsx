@@ -75,7 +75,7 @@ export default function Footer() {
           </FooterLink>
           <FooterLink
             target="_blank"
-            href="https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Fresume-yik.pdf?alt=media&token=3b11d87e-6988-4000-8aaf-84609c88f9a3"
+            href="https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Fresume-yik-tung.pdf?alt=media&token=bf97aa34-58da-4425-8c40-153af53060a4"
           >
             Resume.pdf
           </FooterLink>

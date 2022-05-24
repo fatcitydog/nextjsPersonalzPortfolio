@@ -12,7 +12,7 @@ const TechCard = styled.section`
   align-items: center;
   justify-content: center;
   margin: 1rem 0;
-  height: 70vh;
+  height: 42rem;
   @media screen and (min-width: 1000px) {
     height: 22rem;
     margin-bottom: 3rem;
