@@ -222,9 +222,9 @@ export const projectData = [
     details:
       " My first react hooks and real full-stack project. A social platform to help people connect and interact. User can login to edit their portfolio as well as post and apply for jobs. ",
     date: "March - April 2022",
-    status: "Processing",
+    status: "Finish",
     deploy: true,
-    link: "/village",
+    link: "https://village-createyourown.vercel.app",
     tech: [
       {
         id: 1,

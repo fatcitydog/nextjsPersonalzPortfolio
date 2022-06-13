@@ -1,9 +1,7 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
+
 import TypeIt from "typeit-react";
 import { Detail } from "../globalStyles";
-
-import Link from "next/link";
 
 const HeroCard = styled.div`
   display: flex;
@@ -139,9 +137,12 @@ export default function Hero() {
           </Detail>
           <Detail>
             Check out my projects:{" "}
-            <Link href="/village">
-              <LinkTag>Village</LinkTag>
-            </Link>
+            <LinkTag
+              target="_blank"
+              href="https://village-createyourown.vercel.app"
+            >
+              Village
+            </LinkTag>
             ,{" "}
             <LinkTag
               target="_blank"
@@ -158,8 +159,9 @@ export default function Hero() {
             </LinkTag>
             ,{" "}
             <LinkTag target="_blank" href="https://band-site-six.vercel.app/">
-              Band Site,{" "}
+              Band Site
             </LinkTag>
+            ,{" "}
             <LinkTag
               target="_blank"
               href="https://travelsite-rho.vercel.app/index.html"
