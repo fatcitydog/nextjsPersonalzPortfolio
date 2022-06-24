@@ -138,6 +138,45 @@ export const BasicTech = [
 
 export const projectData = [
   {
+    id: 10,
+    image: [
+      "https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2FScreenshot%202022-06-22%20at%201.39.04%20PM.png?alt=media&token=b0c08f8e-ddbd-4c6b-939f-82ae56c063bc",
+    ],
+    title: "Map Marker",
+    details:
+      "A map marker website using Ant Design UI Framework and developed by React, Typescript, and Styled Components. You can search different places for the locations, local time as well as adding markers on the map and . ",
+    date: "June 2022",
+    status: "Finished",
+    deploy: true,
+    link: "https://map-search-seven.vercel.app",
+    tech: [
+      {
+        id: 1,
+        name: "React",
+      },
+      {
+        id: 2,
+        name: "TypeScript",
+      },
+      {
+        id: 3,
+        name: "Styled Comp",
+      },
+      {
+        id: 4,
+        name: "Ant Design",
+      },
+      {
+        id: 5,
+        name: "Google Map API",
+      },
+      {
+        id: 6,
+        name: "Auto-Completed",
+      },
+    ],
+  },
+  {
     id: 1,
     image: [
       "https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Fbudget1.png?alt=media&token=df465ecf-3ded-4221-9291-ef4a0c55c6c6",

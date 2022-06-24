@@ -1,14 +1,16 @@
 import styled from "styled-components";
 import { useState } from "react";
+
 import { Container, Wrapper } from "../globalStyles";
 import { BackEndData, BasicTech, FrontEndData } from "../components/Data";
 import Hero from "../components/Hero";
 import TechComponent from "../components/TechComponent";
 import Head from "next/head";
-import { MotionIcon } from "../components/styles/Icon";
+
 import { lightTheme, darkTheme } from "../components/styles/Theme";
 import { ThemeProvider } from "styled-components";
 import { ToggleTheme } from "../components/styles/Icon";
+
 const HomeWrapper = styled(Container)`
   background-color: black;
   color: white;

@@ -148,10 +148,8 @@ export default function ProjectComponent() {
               </LinkStyled>
             )}
           </Bigbox>
-          {/* <StatusBox>{project.status}</StatusBox> */}
           <Bigbox>
             <ProjectImage src={project.image[0]} />
-
             <DetailBox>
               <TextBox>{project.details}</TextBox>
             </DetailBox>

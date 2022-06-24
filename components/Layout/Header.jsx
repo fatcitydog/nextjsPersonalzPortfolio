@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import Link from "next/link";
-import Menu from "./Menu";
-import { MotionIcon } from "../styles/Icon";
 import { motion } from "framer-motion";
+
+import Menu from "./Menu";
+
+
 
 const HeaderBox = styled.nav`
   padding: 1rem;
@@ -43,22 +44,6 @@ export default function Header() {
   return (
     <HeaderBox>
       <Logo href="/">Yik</Logo>
-      {/* <ContactLink
-        drag
-        dragConstraints={{
-          top: -125,
-          right: 125,
-          bottom: 125,
-          left: -125,
-        }}
-        href="#contact"
-      >
-        <MotionIcon
-          image={
-            "https://firebasestorage.googleapis.com/v0/b/village-345022.appspot.com/o/portfolio%2Fconnection.png?alt=media&token=241c4142-d7bc-411c-8d7a-567e8618da16"
-          }
-        />
-      </ContactLink> */}
       <Menu />
     </HeaderBox>
   );

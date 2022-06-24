@@ -137,6 +137,10 @@ export default function Hero() {
           </Detail>
           <Detail>
             Check out my projects:{" "}
+            <LinkTag target="_blank" href="https://map-search-seven.vercel.app">
+              MapMarker
+            </LinkTag>
+            ,{" "}
             <LinkTag
               target="_blank"
               href="https://village-createyourown.vercel.app"

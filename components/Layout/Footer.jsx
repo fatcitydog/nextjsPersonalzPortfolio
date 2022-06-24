@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import { FlexBox } from "../../globalStyles";
+
 const FooterBox = styled.nav`
   padding: 2rem;
   height: 20rem;

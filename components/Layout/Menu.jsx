@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { motion, useCycle } from "framer-motion";
+
 import { MenuIcon, LargeCloseIcon } from "../styles/Icon";
 import { HeaderMenuLink } from "../styles/StyledLink";
 
