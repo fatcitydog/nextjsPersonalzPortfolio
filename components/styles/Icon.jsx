@@ -48,7 +48,7 @@ const ToggleIcon = styled.span`
   right: 5.5rem;
   @media screen and (min-width: 1000px) {
     top: 2.2rem;
-    right: 25%;
+    right: 27rem;
   }
 `;
 

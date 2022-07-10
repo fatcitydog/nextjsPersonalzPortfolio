@@ -3,8 +3,6 @@ import { motion } from "framer-motion";
 
 import Menu from "./Menu";
 
-
-
 const HeaderBox = styled.nav`
   padding: 1rem;
   height: 4rem;

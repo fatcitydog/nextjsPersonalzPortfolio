@@ -70,6 +70,7 @@ const sideVariants = {
 const links = [
   { children: "about", href: "/", id: 1 },
   { children: "project", href: "/project", id: 2 },
+  { children: "contact", href: "#contact", id: 3 },
 ];
 
 export default function Menu() {
